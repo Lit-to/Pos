@@ -18,7 +18,7 @@ for i in f.readlines():
 f.close()
 new_l = gul(out_l)
 print(str(new_l))
-wr_g=open(path+"out.txt", mode="a", encoding="utf-8")
+wr_g=open(path+"\out.txt", mode="a", encoding="utf-8")
 wr_g.write("\n")
 wr_g.write(str(new_l))
 wr_g.close()
