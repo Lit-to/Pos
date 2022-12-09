@@ -37,12 +37,12 @@ minecraft v1.18.2
 ### アマスタを特定の座標にばらまく
 1.  storage ``pos:``のパス``in``にリスト形式で座標を入力します。
     1.  e.g.:```[[34.0,17.0,3.0],[42.0,59.0,39,0]]```
-2.  [``function pos:set``](pos\data\pos\functions\set.mcfunction)を実行します。
+2.  [``function pos:set``](pos/data/pos/functions/set.mcfunction)を実行します。
 3.  上で入力した座標に``{Marker:1b,Invisible:1b,Invulnerable:1b,Tags:["pos"]}``のnbtが追加されたアマスタが設置されます。
 
 ### アマスタの位置にブロックがあるかを確認する。
 上記で生成させたように、posというタグを持つアマスタについて調べることが出来ます。
-[``function pos:block``](pos\data\pos\functions\block.mcfunction)を実行すると以下の動作をします。
--   [#pos:check](pos\data\pos\tags\blocks\check.json)のブロックかチェックします。
+[``function pos:block``](pos/data/pos/functions/block.mcfunction)を実行すると以下の動作をします。
+-   [#pos:check](pos/data/pos/tags/blocks/check.json)のブロックかチェックします。
 -   そのブロックではなかった場合、アマスタを削除します。
 -   全ての処理終了後に、残ったアマスタの数と、削除したアマスタの座標をチャットに出力します。
